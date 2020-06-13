@@ -1,0 +1,135 @@
+body {
+    background-color: paleturquoise;
+}
+
+h1 {
+    font-family: Monoton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    /* -webkit-text-stroke: 0.5px black; */
+    text-shadow: 2px 2px orchid;
+    font-size: 3em;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    background-color: orchid;
+    align-self: center;
+    height: 24px;
+    width: 80%;
+    max-width: 500px;
+    min-width: 200px;
+    border: 1px solid white;
+    box-shadow: 2px 2px orchid;
+}
+
+input[type=text]:hover {
+    background-color: palegreen;
+}
+
+label {
+    text-align: center;
+    align-self: center;
+    color: black;
+    text-shadow: 1px 1px white;
+}
+
+input[type=submit] {
+    width: 100px;
+    align-self: center;
+    background-color: palegreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    height: 30px;
+    border: 1px solid white;
+    box-shadow: 2px 2px orchid;
+    color: black;
+}
+
+input[type=submit]:hover {
+    background-color: orchid;
+}
+
+#generator {
+    display: flex;
+    flex-direction: column;
+}
+
+#arrows {
+    margin-top: 40px;
+    height: 60px;
+    width: auto;
+    align-self: center;
+}
+
+#memePen {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.memeWrapper {
+    position: relative;
+    width: 500px;
+    height: fit-content;
+}
+
+
+.memeImg {
+    width: 500px;
+    margin: 5px;
+    top: 0px;
+    left: 0px;
+}
+
+
+.memeTextUpper, .memeTextLower {
+    position: absolute;
+    text-align: center;
+    width: 490px;
+    font-size: 40px;
+    font-family: 'Impact', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+    -webkit-text-stroke: 1px black;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.memeTextUpper {
+    top: 15px;
+}
+
+.memeTextLower {
+    bottom: 5px;
+}
+
+.rmvBtn {
+    visibility: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: orchid;
+    border: 1px solid white;
+    color: white;
+    box-shadow: 2px 2px orchid;
+}
+
+.memeWrapper:hover .rmvBtn {
+    visibility: visible;
+}
+
+.rmvBtn:hover {
+    background-color: #E74C3C;
+}

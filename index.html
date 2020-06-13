@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <title>Meme Generator</title>
+</head>
+<body>
+    <section id="generator">
+        <h1>Meme Generator</h1>
+        <!-- Enter info to create meme -->
+        <form>
+            <label for="imgSrc">Enter the URL for your image:</label>
+            <input type="text" name="imgSrc" id="imgSrc">
+            <br>
+            
+            <label for="textUpper">Text for top of meme:</label>
+            <input type="text" name="textUpper" id="textUpper">
+            <br>
+            
+            <label for="textLower">Text for bottom of meme:</label>
+
+            <input type="text" name="textLower" id="textLower">
+            <br>
+            
+            <input type="submit">    
+        </form>
+        
+        <img src="images/arrows.png" id="arrows">
+    </section>
+
+    <!-- View or delete memes created in this session -->
+    <section id="memeDisplaySection">
+        <h1>Behold your memes!</h1>
+        <div id="memePen"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
