@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="Assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <title>Meme Generator</title>
 </head>
@@ -13,22 +13,23 @@
         <!-- Enter info to create meme -->
         <form>
             <label for="imgSrc">Enter the URL for your image:</label>
-            <input type="text" name="imgSrc" id="imgSrc">
+            <input type="url" placeholder="http://www.yourURL.com"name="imgSrc" id="imgSrc" required>
             <br>
             
             <label for="textUpper">Text for top of meme:</label>
-            <input type="text" name="textUpper" id="textUpper">
+            <input type="text" 
+           placeholder="Put me at the top!" name="textUpper" id="textUpper" required>
             <br>
             
             <label for="textLower">Text for bottom of meme:</label>
 
-            <input type="text" name="textLower" id="textLower">
+            <input type="text" placeholder="Put me at the bottom!" name="textLower" id="textLower" required>
             <br>
             
-            <input type="submit">    
+            <input type="submit" value="Generate Meme!">    
         </form>
         
-        <img src="images/arrows.png" id="arrows">
+        <img src="Assets/images/arrows.png" id="arrows">
     </section>
 
     <!-- View or delete memes created in this session -->
@@ -36,6 +37,6 @@
         <h1>Behold your memes!</h1>
         <div id="memePen"></div>
     </section>
-    <script src="script.js"></script>
+    <script src="Assets/js/script.js"></script>
 </body>
 </html>

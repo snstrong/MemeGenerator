@@ -22,7 +22,7 @@ form {
     flex-direction: column;
 }
 
-input[type="text"] {
+input[type="text"], input[type="url"] {
     background-color: orchid;
     align-self: center;
     height: 24px;
@@ -33,8 +33,18 @@ input[type="text"] {
     box-shadow: 2px 2px orchid;
 }
 
-input[type=text]:hover {
+input[type=text]:hover, input[type="url"]:hover {
     background-color: palegreen;
+}
+
+input::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ECC9EB ;
+    text-align: center;
+}
+
+input:hover::placeholder {
+    color: #63A663;
 }
 
 label {
@@ -45,15 +55,16 @@ label {
 }
 
 input[type=submit] {
-    width: 100px;
+    width: 155px;
     align-self: center;
     background-color: palegreen;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    height: 30px;
+    height: 34px;
     border: 1px solid white;
     box-shadow: 2px 2px orchid;
     color: black;
+    margin-top: 5px;
 }
 
 input[type=submit]:hover {
